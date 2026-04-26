@@ -184,8 +184,6 @@ def search_by_cas(cas_no: str) -> dict:
             "chemNameKor": chem_name,
             "금지":        is_prohibited,
             "특별관리":    is_special,
-            "_list":       item0,       # 디버그: 목록 응답
-            "_all":        detail_raw,  # 디버그: 상세 응답 (실제 필드명 확인용)
         }
 
     except requests.exceptions.Timeout:
